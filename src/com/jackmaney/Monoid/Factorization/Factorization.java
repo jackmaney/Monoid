@@ -42,6 +42,18 @@ public class Factorization<T extends MonoidElement<T>>
 		return new ExponentList(a);
 	}
 	
+	public int length(){
+		int result = 0;
+		
+		ExponentList exponents = getExponentList();
+		
+		for (Integer integer : exponents) {
+			result += integer;
+		}
+		
+		return result;
+	}
+	
 	@Override
 	public void add(int index, Power<T> element) {
 		super.add(index, element);

@@ -1,17 +1,19 @@
-package com.jackmaney.Monoid.Strategy;
+package com.jackmaney.Monoid.Strategy.Naive;
 
 import java.util.ArrayList;
 
 import com.jackmaney.Monoid.Monoid;
 import com.jackmaney.Monoid.Element.MonoidElement;
+import com.jackmaney.Monoid.Strategy.FindIrreducibleFactorsStrategy;
 
 public class NaiveIrreducibleFinderStrategy<T extends MonoidElement<T>> 
 	implements FindIrreducibleFactorsStrategy<T>{
 	
+
+
 	@Override
 	public ArrayList<T> find(T element, Monoid<T> m) {
-		
-		ArrayList<T> allFactors = m.getFindAllFactorsStrategy().find(element, m);
+		ArrayList<T> allFactors = m.getFindAllFactorsStrategy().find(element,m);
 		
 		ArrayList<T> result = new ArrayList<>();
 		
