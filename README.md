@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/jackmaney/Monoid.png)](http://waffle.io/jackmaney/Monoid)  
 Monoid
 ======
 
